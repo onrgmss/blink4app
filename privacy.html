@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Blink4!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #00f0ff;
+            --secondary: #ff00e5;
+            --bg-dark: #0a0a0f;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-dark);
+            color: #fff;
+            line-height: 1.8;
+            min-height: 100vh;
+        }
+
+        /* Background */
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: 
+                radial-gradient(ellipse at 20% 20%, rgba(0, 240, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 80%, rgba(255, 0, 229, 0.1) 0%, transparent 50%),
+                var(--bg-dark);
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            backdrop-filter: blur(20px);
+            background: rgba(10, 10, 15, 0.9);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .nav-logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration: none;
+        }
+
+        .nav-links a {
+            color: #888;
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-left: 30px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Content */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 120px 20px 60px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .last-updated {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 24px;
+            padding: 50px;
+        }
+
+        h2 {
+            font-family: 'Orbitron', sans-serif;
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin: 40px 0 20px 0;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        p {
+            color: #aaa;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            color: #aaa;
+            margin-left: 25px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        strong {
+            color: #fff;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            margin-top: 60px;
+        }
+
+        .footer-logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+        }
+
+        .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            color: #666;
+            margin: 0 15px;
+        }
+
+        .copyright {
+            color: #444;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 15px 20px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-animation"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html" class="nav-logo">BLINK4!</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="mailto:onurgumus725@gmail.com">Contact</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last updated: March 2026</p>
+        </header>
+
+        <div class="content">
+            <h2>Introduction</h2>
+            <p>Blink4! ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application.</p>
+
+            <h2>Information We Collect</h2>
+            <p>We collect the following types of information:</p>
+            <ul>
+                <li><strong>Account Information:</strong> When you create an account, we collect your email address and display name.</li>
+                <li><strong>Game Data:</strong> We store your game scores, achievements, and progress.</li>
+                <li><strong>Device Information:</strong> We may collect device type, operating system, and unique device identifiers for analytics and advertising purposes.</li>
+            </ul>
+
+            <h2>How We Use Your Information</h2>
+            <p>We use the collected information to:</p>
+            <ul>
+                <li>Provide and maintain the game service</li>
+                <li>Display leaderboards and competitive features</li>
+                <li>Improve our app and user experience</li>
+                <li>Show relevant advertisements</li>
+                <li>Communicate with you about updates or support</li>
+            </ul>
+
+            <h2>Advertising</h2>
+            <p>Blink4! uses Google AdMob to display advertisements. AdMob may collect and use data to provide personalized ads. You can opt out of personalized advertising through your device settings.</p>
+            <p>For more information about how Google uses data, please visit: <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></p>
+
+            <h2>Data Storage</h2>
+            <p>Your data is stored securely using Google Firebase services. We implement appropriate security measures to protect your information from unauthorized access.</p>
+
+            <h2>Third-Party Services</h2>
+            <p>Our app uses the following third-party services:</p>
+            <ul>
+                <li>Google Firebase (Authentication & Database)</li>
+                <li>Google AdMob (Advertising)</li>
+                <li>Apple Sign In (iOS Authentication)</li>
+                <li>Google Sign In (Authentication)</li>
+            </ul>
+
+            <h2>Children's Privacy</h2>
+            <p>Blink4! is suitable for all ages. We do not knowingly collect personal information from children under 13 without parental consent. If you believe we have collected such information, please contact us.</p>
+
+            <h2>Your Rights</h2>
+            <p>You have the right to:</p>
+            <ul>
+                <li>Access your personal data</li>
+                <li>Request deletion of your account and data</li>
+                <li>Opt out of personalized advertising</li>
+                <li>Export your game data</li>
+            </ul>
+            <p>To delete your account, go to Profile → Settings → Delete Account within the app.</p>
+
+            <h2>Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date.</p>
+
+            <h2>Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+            <p>Email: <a href="mailto:onurgumus725@gmail.com">onurgumus725@gmail.com</a></p>
+        </div>
+
+        <footer>
+            <div class="footer-logo">BLINK4!</div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="mailto:onurgumus725@gmail.com">Contact</a>
+                <a href="https://apps.apple.com/app/blink4/id6741188837">App Store</a>
+            </div>
+            <p class="copyright">© 2026 Onur Gümüş. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
